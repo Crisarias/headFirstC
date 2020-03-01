@@ -21,6 +21,7 @@ void* drink_lots(void *a){
     {
         beers = beers - 1;
     }
+    printf("There are now %i bottles of beer on the wall\n", beers);
     pthread_mutex_unlock(&beers_lock);
     return NULL;
 }
